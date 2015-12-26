@@ -1,0 +1,123 @@
+;语言文件格式为: 名称|中文|英文，竖线分割，逗号与分号为注释，///为换行，空行自动忽略
+;Language file format: Name|Chinese|English，vertical is delimiter， comma or semicolon is Comments，///is newline，Empty lines automatically ignored
+ 
+lang_Main_Title|USR-TCP232-T24|USR-TCP232-T24
+lang_Main_AppTitle|USR-TCP232-Setup|USR-TCP232-Setup
+lang_Menu_File|文 件|File
+lang_Menu_LoadDefault|载入默认配置|Load Default Config
+lang_Menu_SaveCfg|保存配置文件|Save Config File
+lang_Menu_Quit|退 出|Quit
+lang_Menu_Scan|搜 索|Search
+lang_Menu_NetScan|通过网络搜索|Search Via LAN
+lang_Menu_ComScan|通过串口读取|Read Via COM
+lang_Menu_LocalIpF5|刷新本机IP|Refresh Local IP
+lang_Menu_lang|English|中文
+lang_Menu_Help|帮助|Help
+lang_Menu_About|关于...|About...
+lang_Menu_RealTimeHelp|实时帮助|Real-time Help
+lang_Menu_Version|检查更新|Latest version
+lang_Menu_LastVersion|http://www.usr.cn/Download/28.html|http://www.usriot.com/Download/28.html
+lang_pm_ReadTheParam|读取选中项参数|ReadTheParam
+lang_pm_SetTheParam|设置选中项参数|SetTheParam
+lang_pm_NetDefault|恢复出厂设置|Factory Reset
+lang_pm_CopyTheMac|复制选中MAC|CopyTheMac
+lang_pm_CopeAllMac|复制所有MAC|CopeAllMac
+lang_btn_More_Ture|显示扩展功能区 》|Show Expand functions 》
+lang_btn_More_False|隐藏扩展功能区《|Hide Expand functions《
+lang_btn_ComRead|串口读取配置|Read via COM
+lang_btn_ComSet|通过串口设置|Setup via COM
+lang_btn_NetScan|通过网络搜索|Search in LAN
+lang_btn_NetSet|设置选中项参数|Set selected item via LAN
+lang_btn_NetDefault|恢复出厂设置|Factory Reset
+lang_lbl_ModuleWork|模块工作方式|Module work mode
+lang_lbl_ModuleIP|本模块IP地址|Module IP
+lang_lbl_Mask|子网掩码|Subnet mask
+lang_lbl_Gateway|模块默认网关|Default Gateway
+lang_lbl_BaudRate|串口波特率|Baud Rate(bps)
+lang_lbl_PDS|校验/数据/停止|Parity/Data/Stop
+lang_lbl_ModulePort|模块自身端口|Module port
+lang_lbl_DeIP|连接目标IP|Destination IP
+lang_lbl_DePort|连接目标端口|Destination Port
+lang_lbl_ComSet|(?) CFG需接地|(?) CFG connect to GND
+lang_lbl_NetSet|(?) CFG需悬空|(?) Leave CFG pin free
+lang_lbl_SelectCom|请选择串口|Select serial port
+lang_lbl_SelectNet|请选择网络|Select Network
+lang_lbl_More|扩展功能区|Expand functions
+lang_lbl_NetDev|网络设备列表|Device list in the Net
+lang_NoCom|没有串口|No serial port
+lang_lv_NetDev_IP|模块IP|Module IP
+lang_lv_NetDev_MAC|MAC地址|MAC
+lang_lv_NetDev_Ver|版本|Ver
+lang_chk_ConnSendId|建立连接后发送ID号|Send device ID when connected
+lang_chk_DataWithId|发送数据时携带ID号|Send data with device ID
+lang_lbl_HexCopy|复制|Copy
+lang_grp_Param|参数设置区|Parameters
+lang_grp_Log|操作日志|Logs
+lang_grp_ComSet|通过串口操作|Operate via COM
+lang_grp_NetSet|通过网络操作|Operate via LAN
+lang_grp_Special|特殊功能|Special functions
+lang_grp_Hex|数据流|Hex
+lang_Hint_ModuleWork|模块工作方式选择：///UDP server 是指不验证来源IP地址，收到UDP数据包后将目标IP改为数据来源IP，类似TCP server的功能。|module work mode: ///UDP server is like TCP server,when receive a UDP packet,change target IP to sorce IP of the received UDP packet,Does not verify the source IP.
+lang_Hint_ModuleIP|本模块IP地址可在指定网段内任意分配，但网内不允许重复。|Module IP can fill any ip in LAN, ///just remeber do not repeat.
+lang_Hint_Mask|子网掩码：通常是255.255.255.0|Subnet mask, the default is 255.255.255.0
+lang_Hint_Gateway|模块默认网关，可以参看你电脑的网关IP，///一般是192.168.0.1，192.168.1.1，192.168.0.254这类。|Default Gateway in your lan, ///you can look at pc's default getway, ///it should be like 192.168.0.1
+lang_Hint_BaudRate|请填写标准波特率值，模块默认波特率为115200.波特率应该与串口服务器连接的串口设备波特率一致。波特率范围为：300-23400|Please fill standard bandrate number.the default baudRate is 115200,it should be same as baudRate of device which communicate with the module，Scope of baudrate: 300-23400
+lang_Hint_PDS|校验位 / 数据位 / 停止位|Parity bits / Data bits / Stop bits
+lang_Hint_ModulePort|模块工作于UDP或TCP Server模式时将监听此端口|When work at UDP mod or TCP Server mode,/// module will listen this port.
+lang_Hint_DeIP|服务器的IP或者模块要连接计算机的IP，目标IP只对TCP client和UDP模式起作用。///发UDP广播时，将其设置为255.255.255.255，其广播端口在下面的【连接目标端口】处设置。|Destination IP is the Server Ip or the PC ip which you want to link.It only work in TCP client or UDP mod.///If you want to Broadcast,set it 255.255.255.255,and set the broadcast port in 【Destination Port】
+lang_Hint_DePort|服务器上的应用程序监听的端口号|The port be listen at server software.
+lang_Hint_NetDev|点击搜到的设备可读取参数，右键点击设备列表显示更多功能|Click device can read the parameters, right-click Device list show more
+lang_Hint_ID|设备的ID，十进制表示，范围0~65535|Device ID in decimal, from 0 to 65535.
+lang_Hint_RS485|开启485功能，默认勾选。不会对232通信造成影响|Use 485
+lang_Hint_RS422|开启422功能|Use 422
+lang_Hint_Reset|做TCP Client时，尝试30次连接Tcp Server失败，自动重启|The Device as a TCP Client, try to connect the TCP Server 30 times failure, automatic restart
+lang_Hint_Link|开启Link脚指示TCP连接是否建立的功能，连接建立则输出低电平|Pin link to show if tcp has connected or not,f the connection is established, then the output low level
+lang_Hint_Index|模块做TCP server时，使用index来区分多个tcp连接|TCP Server index,4.12 or above support this function
+lang_Hint_RFC2217|类RFC2217功能，在网络端动态修改模块的串口工作参数，默认勾选|RFC2217 change baudrate in socket,4.13 support this function
+lang_Hint_ComF5|点击可刷新显示本机所有串口|Click to refresh and show all serial port in the machine
+lang_Hint_HexCopy|复制数据流|Copy Hex
+lang_Hint_Param|参数区，要配置的参数写到这里，读取的参数显示到这里。|parameters need to be setup fill to here ///and read out parameters will be show here.
+lang_Hint_ComSet|此框内的按钮是通过串口与设备进行通讯的，通过串口操作需要给模块供电，然后将CFG接地以进入配置状态，配置完成后需要将CFG悬空或者拉高以使模块回到工作状态，建议通过网络操作，则此框内的按钮不用理会。|Buttons in this box is for communicate through the serial port, it need the module power on, and connect CFG to GND to enter the configuration state. After complete configuration pulled up CFG pin to VCC or free it, to enable the module back to working condition, Suggest you operate through the network, no need to care CFG pin,then buttons in this box are ignored.
+lang_Hint_NetSet|此框内的内容均是通过网络进行，需要将模块供电，并接入和电脑同一个局域网内或者直接连到计算机上，交叉直连网线均可，模块会自动切换。///设置步骤：先点【通过网络搜索】，查找网络中的模块，选中模块，在左侧填写参数，再点【设置选中项参数】按钮，设置完成后模块会重启，过一会再点搜索查看设置结果。点击搜索到的模块可以读取配置！|The buttons in this box are for network config and need the module power supply, and access and computers within the same LAN or directly connected to the computer. Both accross or straight cable are ok, the module will automatically switch. ///Setup steps: the first click 【Search in LAN】button, find the network module, select the module, fill in the parameters at the left side, and then  click 【Set selected item via LAN】button, the module will restart after the setup complete, a few moments later click the search button to view settings result.click the search module can read the configuration!
+lang_Hint_HelpID|设备的独立ID，TCP Client模式时用于区分各设备,连接时发送或者放在数据前与数据一起发送。请不要随便使用这个功能，除非你知道它能做什么。|ID function for TCP Client, send id to distinguish different device, send dada when connect or send before data.Please don't use this function, unless you know what it can do
+lang_Hint_ComSetHelp|通过串口方式配置模块，需要将CFG引脚接地，各模块的CFG引脚不同，请参考手册，-T和-D以及-S的引脚电平是TTL，连接计算机时需要注意进行TTL到RS232电平转换。|Configuration module through the serial port, need to connect the CFG pin to GND, connect module to computers need to pay attention of TTL or RS232 level, for example -T -D -S pin level is TTL version, you need to convert to RS232 version use max3232 etc.
+lang_mmo_log_help1|使用帮助：|Help:
+lang_mmo_log_help2|1、本软件支持串口和网络设置，但是你只需要选其一|1. You can use COM port or Ethernet to config the device, but you just need choose one
+lang_mmo_log_help3|2、通过串口设置要将CFG接地，而通过网络不能接|2. When use COM port you must connect CFG to GND, while use Ethernet you shoule not connect
+lang_mmo_log_help4|3、鼠标悬停有提示，您还可以通过以下方式寻求帮助|3.MouseOver display hints
+lang_mmo_log_help5|技术支持：0531-88822739 www.usr.cn|
+lang_mmo_log_help6|企业QQ:800025565 邮箱：tec@usr.cn|Any question, Email to tec@usr.cn
+lang_Ts_UdpBroadcast|【UDP广播】|【UDP Broadcast】
+lang_Ts_UdpSend|【UDP发送】|【UDP Send】
+lang_Ts_UdpReceive|【UDP接收】|【UDP Receive】
+lang_Ts_ComReceive|【串口接收】|【COM Receive】
+lang_Ts_ComSend|【串口发送】|【COM Send】
+lang_Ts_Doing|操作中，请稍后...|Operating, please wait a moment...
+lang_Ts_NoSelected|没有选中要操作的模块，请先搜索到设备，选中一个设备再操作|No selected device, please search and choose one device first.
+lang_Ts_LocalIpF5_1|检测到本机的可用IP如下：|Available IP in the machine is as follows:
+lang_Ts_LocalIpF5_2|点击【通过网络搜索】，物理上与之在同一个局域网内（模块的IP可以和计算机的IP不在同一个网段）的模块将作出回应.|Click 【Search in LAN】, module in the same local will respond.
+lang_Ts_LocalIpF5_3|没有检测到可用IP，无法通过网络操作|No available IP，Operate via LAN is unable.
+lang_Ts_UdpSendFailure|UDP发送失败,可能是本地IP发生了变化，请点击菜单【搜索】>【刷新本机IP】.|UDP send Failure，May be the local IP has changed, please click on the menu 【Search】>【Refresh Local IP】.
+lang_Ts_ParamHasShew|设备的当前配置信息已经更新到左侧的数据框。|Parameters has updated to left form.
+lang_Ts_ParamHasShew_Com|修改参数后，点【通过串口设置】。|After change Param,click 【Setup via COM】.
+lang_Ts_ParamHasShew_Net|修改参数后，点【设置选中项参数】。|After change Param,click 【Set selected item via LAN】.
+lang_Ts_ParamDealFailure|参数处理失败，请重试|Param Failure，Please try again
+lang_Ts_DidNotSearch|没搜到模块么？请排查以下情况: ①将CFG引脚悬空或拉高，不能接地。  ②模块供电，连到计算机所在的局域网内，或通过网线直连电脑（交叉直连网线均可）|did not search module? Please check:①Leave CFG pin should be free.   ②power on module and use network cable to connect it to your PC or in same LAN，both accross or straight cable are ok
+lang_Ts_NetSetOk1|设备(MAC：|The param of Device which MAC is 
+lang_Ts_NetSetOk2|)参数设置成功,稍后刷新重新搜索模块|set OK,You can search for new setting later.
+lang_Ts_ComSetOk|设置成功|setup success
+lang_Ts_ComSendFailure|串口发送失败，请重试|Serial Send Failure，please try again
+lang_Ts_ComRcvTimeOut|从串口接收数据超时，操作失败，请检查连接是否正确，模块是否已经进入配置模式，选择的COM口号是否正确，点击“通过串口操作”旁边的问号获取更多信息。|Time out when wait COM port answer, please check cable, CFG jumper, COM port, or click the question mark near operation Through the serial port for more information.
+lang_DataHeadOrChkErr|包头或校验错误|Packet Header error or check sum is not correct
+lang_ComIsNo|串口不存在或被占用|Serial is Occupied
+lang_ComIsOpen|串口已打开|Serial is Open
+lang_ComIsClose|串口已关闭|Serial is Close
+lang_About_Title|关于|About
+lang_About_Version|版本：|Version:
+lang_About_OK|确 认|OK
+lang_About_SoftName|名称：USR-TCP232-T24|Name:  USR-TCP232-T24
+lang_About_Description|说明：本程序由济南有人物联网技术有限公司设计提供，用于USR-TCP232 T24系列(-T/-24/-2/-D/-S/-ES1/EVB)产品设置，可以通过串口或者网络对系统产品进行配置，本软件使用免费。|Instruction:  This software is design by Jinan usr IOT Technology Co., Ltd.It is used for USR-TCP232 T24 Series (-T/-24/-2/-D/-S/-ES1/EVB) config.
+lang_About_Contact|联系我们：|Contact Us:
+lang_About_Website|http://www.usr.cn|http://www.usriot.com
+lang_About_Tel|0531-88822739|0531-88822739
+lang_About_Email|tec@usr.cn|tec@usr.cn
