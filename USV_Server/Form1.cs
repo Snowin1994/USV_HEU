@@ -15,6 +15,7 @@ using SuperSocket.SocketEngine;
 using System.Configuration;
 using System.IO;
 using System.Media;
+using SuperHelper.StringToTxt;
 
 namespace USV_Server
 {
@@ -249,17 +250,14 @@ namespace USV_Server
                         sp.Stop();
                     }
                 }
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 - annotation
                 string Temp = DateTime.Now.ToString() + "后测距：" + textBox17.Text + System.Environment.NewLine;
-
                 string path = @".\\后测距.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
+
+
             }
             catch (Exception ex)
             {
@@ -577,13 +575,9 @@ namespace USV_Server
                     case Keys.Left:
                         strKey = "FL0" + InitializeServer.ConFixedTail;
                         DataClient.ExecuteCommand(strKey);
-                        DataClient.ExecuteCommand(strKey);
-                        DataClient.ExecuteCommand(strKey);
                         break;
                     case Keys.Right:
                         strKey = "FR0" + InitializeServer.ConFixedTail;
-                        DataClient.ExecuteCommand(strKey);
-                        DataClient.ExecuteCommand(strKey);
                         DataClient.ExecuteCommand(strKey);
                         break;
                 }
@@ -649,7 +643,7 @@ namespace USV_Server
         /// <param name="e"></param>
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            #region About
             MessageBox.Show
             (
                 "   USV_HEU" + System.Environment.NewLine + System.Environment.NewLine +
@@ -667,22 +661,18 @@ namespace USV_Server
                 "熊雪妍    电路焊接" + System.Environment.NewLine + 
                 "苍玖阳    零件加工" + System.Environment.NewLine
             );
+            #endregion
         }
 
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "左上测距：" + textBox14.Text + System.Environment.NewLine;
-
                 string path = @".\\左上测距.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -695,16 +685,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "右上测距：" + textBox15.Text + System.Environment.NewLine;
-
                 string path = @".\\右上测距.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -717,16 +702,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "左下测距：" + textBox12.Text + System.Environment.NewLine;
-
                 string path = @".\\左下测距.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -739,16 +719,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "右下测距：" + textBox16.Text + System.Environment.NewLine;
-
                 string path = @".\\右下测距.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -761,16 +736,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "左上推进器：" + textBox9.Text + System.Environment.NewLine;
 
                 string path = @".\\左上推进器.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -783,16 +753,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "右上推进器：" + textBox20.Text + System.Environment.NewLine;
-
                 string path = @".\\右上推进器.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -805,16 +770,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "左推进器：" + textBox10.Text + System.Environment.NewLine;
-
                 string path = @".\\左推进器.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -827,16 +787,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "右推进器：" + textBox19.Text + System.Environment.NewLine;
-
                 string path = @".\\右推进器.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -849,16 +804,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "左下推进器：" + textBox11.Text + System.Environment.NewLine;
-
                 string path = @".\\左下推进器.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -871,16 +821,11 @@ namespace USV_Server
         {
             try
             {
-                #region 将string数据写入文件 - 已注释
+                #region 将string数据写入文件 
                 string Temp = DateTime.Now.ToString() + "右下推进器：" + textBox18.Text + System.Environment.NewLine;
-
                 string path = @".\\右下推进器.txt";
-                FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                StreamWriter sw = new StreamWriter(f);
-                sw.WriteLine(Temp);
-                sw.Flush();
-                sw.Close();
-                f.Close();
+
+                new PutStringIntoTxt(Temp, path).IntoTxt();
                 #endregion
             }
             catch(Exception ex)
@@ -1047,7 +992,6 @@ namespace USV_Server
         {
             try
             {
-                //string FileAdd = Environment.GetFolderPath(Environment.SpecialFolder.Fonts);
                 string FileAdd = @".\\";
                 System.Diagnostics.Process.Start(FileAdd);
             }
@@ -1055,11 +999,6 @@ namespace USV_Server
             {
                 MessageBox.Show("路径不存在！");
             }
-        }
-
-        private void textBox22_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button14_Click(object sender, EventArgs e)

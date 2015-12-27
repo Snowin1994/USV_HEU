@@ -63,6 +63,9 @@
     <Reference Include="log4net">
       <HintPath>..\..\..\Document\SuperSocket(1.6.4).Source\SuperSocketDll\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="SuperHelper.StringToTxt">
+      <HintPath>..\..\..\SuperHelper\SuperHelper.StringToTxt\bin\Debug\SuperHelper.StringToTxt.dll</HintPath>
+    </Reference>
     <Reference Include="SuperSocket.Common">
       <HintPath>..\..\..\Document\SuperSocket(1.6.4).Source\SuperSocketDll\SuperSocket.Common.dll</HintPath>
     </Reference>

@@ -131,6 +131,7 @@
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.button14 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox27 = new System.Windows.Forms.TextBox();
@@ -161,7 +162,6 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -487,7 +487,6 @@
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Location = new System.Drawing.Point(69, 208);
             this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(78, 14);
             this.textBox17.TabIndex = 22;
             this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
@@ -1385,6 +1384,17 @@
             this.splitContainer7.SplitterDistance = 396;
             this.splitContainer7.TabIndex = 0;
             // 
+            // button14
+            // 
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.Location = new System.Drawing.Point(111, 343);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(76, 21);
+            this.button14.TabIndex = 83;
+            this.button14.Text = "保存修改";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -1677,17 +1687,6 @@
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 47;
             this.label3.Text = "第一组灯";
-            // 
-            // button14
-            // 
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.Location = new System.Drawing.Point(111, 343);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(76, 21);
-            this.button14.TabIndex = 83;
-            this.button14.Text = "保存修改";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // Form1
             // 
